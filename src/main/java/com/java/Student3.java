@@ -4,5 +4,6 @@ public class Student3 {
     public void method2() {
         Student student = new Student();
         String course = student.course;
+        String grade1 = student.grade;
     }
 }
