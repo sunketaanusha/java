@@ -100,16 +100,64 @@ public class StringsPractice {
         System.out.println(result);
     }
 
+    @Test
+    public void stringLength() {
+        String s1 = "hello";
+        int s2 = s1.length();
+        System.out.println(s2);
+    }
 
 
     @Test
-    public void method1(){
+    public void method1() {
         String s1 = "hello";
         // h
         // ello
         String s2 = s1.substring(1);
         System.out.println(s2);
-        String s3 = s1.substring(0,1);
+        String s3 = s1.substring(0, 1);
         System.out.println(s3);
+    }
+
+    @Test
+    public void stringTest() {
+        String s1 = "hello";
+        String s2 = "java";
+        int s3 = s1.length();
+        int s4 = s2.length();
+        int stringLength = s3 + s4;
+        System.out.println(stringLength);
+        int x = s1.compareTo(s2);
+        if (x == -2) {
+            System.out.println("no");
+        } else {
+            System.out.println("yes");
+        }
+        String firstLetters1 = s1.substring(0, 1);
+        String remainingLettersS1 = s1.substring(1);
+        String upperCase = firstLetters1.toUpperCase();
+        String s5 = upperCase + remainingLettersS1;
+//        System.out.println(s5);
+        String firstLetters2 = s2.substring(0, 1);
+        String remainingLettersS2 = s2.substring(1);
+        String upperCase1 = firstLetters2.toUpperCase();
+        String s6 = upperCase1 + remainingLettersS2;
+//        System.out.println(s6);
+        System.out.println(s5 + " " + s6);
+
+    }
+
+    @Test
+    public void toCompare() {
+        String s1 = "hello";
+        String s2 = "java";
+        int x = s1.compareTo(s2);
+        System.out.println(x);
+//        if(x == -15) {
+//            System.out.println("no");
+//        }
+//        else {
+//            System.out.println("yes");
+//        }
     }
 }
