@@ -128,7 +128,7 @@ public class StringsPractice {
         int stringLength = s3 + s4;
         System.out.println(stringLength);
         int x = s1.compareTo(s2);
-        if (x == -2) {
+        if (x == 0 && x < 0) {
             System.out.println("no");
         } else {
             System.out.println("yes");
