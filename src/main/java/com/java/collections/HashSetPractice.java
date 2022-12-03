@@ -18,7 +18,7 @@ public class HashSetPractice {
         Set<String> set = new HashSet<>();
         System.out.println(set);
     }
-    
+
     //no duplicates
     //no order
     //not index based access
